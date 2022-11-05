@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -6,7 +7,8 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
+          {/* Welcome to <a href="https://nextjs.org">Next.js 13!</a> */}
+          Read <Link href="/posts/first-post">this page!</Link>
         </h1>
 
         <p className={styles.description}>
